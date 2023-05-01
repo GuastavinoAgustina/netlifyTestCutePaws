@@ -15,16 +15,15 @@
 }
 
 .CutePaws {
-    
     display: flex;
     align-items: center;
     height: 120px;
     padding: 5px 10%;
     background-color: var(--amarillo);
     color: #665931;
-    
-    
+    cursor: default;
 }
+
 .CutePaws img{
     width: 90px;
     border-radius: 50%;
@@ -36,8 +35,16 @@ h1 {
     padding-left: 20px;
     font-size: 30px;
 }
-
-
+h3 {
+    color: var(--marron);
+    padding: 5px 10%;
+    font-size: 25px;
+}
+h4 {
+    color: black;
+    padding: 5px 10%;
+    font-size: 20px;
+}
 /* estilos para la barra de navegacion */
 
 
@@ -59,11 +66,12 @@ nav ul li{
     padding: 0 20px; 
 }
 nav ul li a:hover{
-    color: var(--amarillo);
+    color: white;
 }
 nav ul li a{
-    font-size: 700;
-    color: black;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--marron);
     text-decoration: none;
 }
 .btn button{
@@ -82,7 +90,7 @@ nav ul li a{
 .carousel {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 55vw;
     overflow: hidden;
     display: block;
 }
@@ -92,8 +100,7 @@ nav ul li a{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
     object-fit: cover;
     transition: opacity 1s ease-in-out;
 }
@@ -107,7 +114,7 @@ nav ul li a{
 }
 
 body {
-    background-color: var(--rosado);
+    background-color: white;
     color: black;
 }
 p {
@@ -123,15 +130,72 @@ footer{
     background-color: var(--naranja);
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    height: 60px;
+    height: 150px;
     padding: 5px 10%;
 }
 footer a{
+    align-items: center;
     padding: 0;
+    margin-left: 2%;
+    margin-right: 2%;
     list-style: none;
     display: flex;
     font-size: 700;
-    color: black;
+    color: white;
     text-decoration: none;
+    font-weight: 100;
+    
+}
+.fa {
+    
+    padding: 2px;
+    font-size: 30px;
+    width: 50px;
+    text-decoration: none;
+    /* margin: 10px 10px; */
+}
+.contenido{
+    padding: 2% 10% 2% 10% ;
+    text-align: justify;
+}
+.seccion{
+    padding: 1% 1% 1% 0%;
+}
+
+/* Cuadricula que muestra productos */
+
+/* .producto{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+} */
+
+.petImagenes{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: 
+    Hasta 768 px se va a comportar de esta forma: 
+    Todas las clases que tengan la palabra col- en su nombre
+    van a tener un ancho del 100%, ocupando todo el viewport*/
+    h1 {
+        font-size: 20px;
+    }
+    footer a{
+        font-size: 10px;
+    }
+    nav ul li a{
+        font-weight: 700;
+        font-size: 15px;
+    }
+    .btn button{
+        font-weight: 700;
+        padding: 5px 25px;
+        font-size: 12px;
+    }
 }

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Favicon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/CutePaws/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/CutePaws/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/CutePaws/favicon/favicon-16x16.png">
@@ -23,21 +24,22 @@
 <body>
     <header>
         <div class="CutePaws">
-            <img src="/CutePaws/Logo/CutePaws.png" alt="Logo de Cute Paws">
+            <a href="CutePaws.html">
+                <img src="/CutePaws/Logo/CutePaws.png" alt="Logo de Cute Paws">
+            </a>
             <h1>Bienvenidos a Cute Paws Petshop</h1>
         </div>
     </header>
     <!--Barra de navegación-->
     
     <nav>
-        
         <ul >
             <li><a href="Gatos.html">Gatos</a></li>
             <li><a href="Perros.html">Perros</a></li>
             <li><a href="Otros.html">Otros</a></li>
             <!-- <li><a href="Contacto.html">Sigue nuestras huellas</a></li> -->
         </ul>
-        <a href="#" class="btn"><button>Sigue nuestras huellas</button></a>
+        <a href="#footer" class="btn"><button>Sigue nuestras huellas</button></a>
     </nav>
     
     <!--Imágenes del carrusel-->
@@ -57,19 +59,25 @@
             carouselImages[currentImageIndex].style.opacity = '1';
         }, 5000);
     </script>
-    <!-- carouselImages.forEach((image, index) => {
-            image.addEventListener('click', () => {
-                carouselImages[currentImageIndex].style.opacity = '0';
-                currentImageIndex = index;
-                carouselImages[currentImageIndex].style.opacity = '1';
-            });
-        });
-    </script>-->
-    <footer>
-        <a href="#"><i class="fab fa-facebook"></i>Cute Paws Petshop</a>
-        <a href="#"><i class="fab fa-twitter"></i>Cute Paws</a>
-        <a href="#"><i class="fab fa-instagram"></i>Cute Paws amantes de mascotas </a>
-        <a href="#"><i class="fab fa-youtube"></i>Cute Paws expertos en mascotas </a>
+
+    <!-- <h3>Segui nuestras huellas!</h3>
+    <h4>No te pierdas nuetros nuevos lanzamientos</h4>
+    <div class="redesSociales">
+        <div class="redesIcons">
+            
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-youtube"></a>
+        <a href="#" class="fa fa-google"></a>
+
+
+        </div>
+    </div> -->
+    <footer id="footer">
+        <a ><i class="fa fa-facebook"></i>Cute Paws Petshop</a>
+        <a ><i class="fa fa-twitter"></i>Cute Paws</a>
+        <a ><i class="fa fa-instagram"></i>Cute Paws amantes de mascotas </a>
+        <a ><i class="fa fa-youtube"></i>Cute Paws expertos en mascotas </a>
     </footer>
 </body>
 </html>
