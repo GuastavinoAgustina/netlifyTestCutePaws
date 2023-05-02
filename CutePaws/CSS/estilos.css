@@ -8,8 +8,8 @@
   }
 
 *{
+    box-sizing: border-box;
     margin: 0;
-    padding: 0;
     font-family: 'Nunito', sans-serif;
     font-size: 20px;
 }
@@ -162,16 +162,6 @@ footer a{
     padding: 1% 1% 1% 0%;
 }
 
-/* Cuadricula que muestra productos */
-
-/* .producto{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-} */
-
 .petImagenes{
     margin-top: 20px;
     margin-bottom: 10px;
@@ -180,19 +170,20 @@ footer a{
 
 input[type=text], select{
     width: 100%;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    /* padding-top: 12px;
+    padding-bottom: 12px; */
+    padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
-  }
-  
-  label {
+}
+
+label {
     padding: 12px 12px 12px 0;
     display: inline-block;
-  }
-  
-  input[type=submit] {
+}
+
+input[type=submit] {
     background-color: var(--naranja);
     color: white;
     padding: 12px 20px;
@@ -201,41 +192,39 @@ input[type=text], select{
     cursor: pointer;
     float: right;
     margin-top: 20px;
-  }
-  
-  input[type=submit]:hover {
+}
+
+input[type=submit]:hover {
     background-color: var(--marron);
-  }
-  
-  .formulario {
-    box-sizing: border-box;
+}
+
+.formulario {
     border-radius: 5px;
     padding: 5px 10% 20px 10%;
-  }
-  
-  .col-25 {
+}
+
+.col-25 {
     float: left;
     width: 25%;
     margin-top: 6px;
-  }
-  
-  .col-75 {
+}
+
+.col-75 {
     float: left;
     width: 75%;
     margin-top: 6px;
-  }
-  .row:after {
-  content: "";
-  display: table;
-  clear: both;
 }
-  /* Clear floats after the columns */
-  .row:after {
+.row:after {
     content: "";
     display: table;
     clear: both;
-    margin-top: ;
-  }
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
   
 @media only screen and (max-width: 768px) {
     /* For mobile phones: 
@@ -259,6 +248,9 @@ input[type=text], select{
     }
     .col-25, .col-75, input[type=submit] {
         width: 100%;
-        margin-top: 0;
       }
+    input[type=submit] {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }
