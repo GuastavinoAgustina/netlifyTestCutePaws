@@ -133,7 +133,6 @@ footer a{
     
 }
 .fa {
-    
     padding: 2px;
     font-size: 30px;
     width: 50px;
@@ -227,6 +226,17 @@ input[type=submit]:hover {
     }
     footer a{
         font-size: 10px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    footer{
+        display: -moz-inline-box;
+        text-align: center;
+        background-color: var(--naranja);
+        display: flex;
+        justify-content: space-between;
+        height: 150px;
+        padding: 5px 8%;
     }
     nav ul li a{
         font-weight: 700;
