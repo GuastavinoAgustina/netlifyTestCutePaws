@@ -1,19 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
-
 :root {
     --amarillo: #FEDD62;
     --naranja: #F48B48;
     --rosado: rgb(244,171,186);
     --marron: #665931;
   }
-
 *{
     box-sizing: border-box;
     margin: 0;
     font-family: 'Nunito', sans-serif;
     font-size: 20px;
 }
-
 .CutePaws {
     display: flex;
     align-items: center;
@@ -23,13 +20,11 @@
     color: #665931;
     cursor: default;
 }
-
 .CutePaws img{
     width: 90px;
     border-radius: 50%;
     display: inline-block;
 }
-
 h1 {
     color: var(--marron);
     padding-left: 20px;
@@ -46,8 +41,6 @@ h4 {
     font-size: 20px;
 }
 /* estilos para la barra de navegacion */
-
-
 nav {
     background-color: var(--naranja);
     display: flex;
@@ -84,9 +77,7 @@ nav ul li a{
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
-
 /* carousel estilos */
-
 .carousel {
     position: relative;
     width: 100%;
@@ -94,7 +85,6 @@ nav ul li a{
     overflow: hidden;
     display: block;
 }
-
 .carousel-image {
     justify-content: center;
     position: absolute;
@@ -107,12 +97,9 @@ nav ul li a{
 .carousel-image:not(:first-child){
     opacity: 0;
 }
-
-
 .carousel{
     background-color: var(--amarillo);
 }
-
 body {
     background-color: white;
     color: black;
@@ -120,7 +107,6 @@ body {
 p {
     color: black;
 }
-
 h2 {
     color: black;
 }
@@ -161,28 +147,22 @@ footer a{
 .seccion{
     padding: 1% 1% 1% 0%;
 }
-
 .petImagenes{
     margin-top: 20px;
     margin-bottom: 10px;
     width: 100%;
 }
-
 input[type=text], select{
     width: 100%;
-    /* padding-top: 12px;
-    padding-bottom: 12px; */
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
 }
-
 label {
     padding: 12px 12px 12px 0;
     display: inline-block;
 }
-
 input[type=submit] {
     background-color: var(--naranja);
     color: white;
@@ -193,22 +173,18 @@ input[type=submit] {
     float: right;
     margin-top: 20px;
 }
-
 input[type=submit]:hover {
     background-color: var(--marron);
 }
-
 .formulario {
     border-radius: 5px;
     padding: 5px 10% 20px 10%;
 }
-
 .col-25 {
     float: left;
     width: 25%;
     margin-top: 6px;
 }
-
 .col-75 {
     float: left;
     width: 75%;
@@ -219,13 +195,28 @@ input[type=submit]:hover {
     display: table;
     clear: both;
 }
-/* Clear floats after the columns */
 .row:after {
     content: "";
     display: table;
     clear: both;
+}  
+.textoValidacion{
+    margin-top: 10px;
+    color: var(--naranja);
+
 }
-  
+@media only screen and (max-width: 992px) {
+    h1 {
+        font-size: 25px;
+    }
+    footer a{
+        font-size: 15px;
+    }
+    nav ul li a{
+        font-weight: 800;
+        font-size: 18px;
+    }
+}
 @media only screen and (max-width: 768px) {
     /* For mobile phones: 
     Hasta 768 px se va a comportar de esta forma: 

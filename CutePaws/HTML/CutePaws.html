@@ -75,10 +75,10 @@
     </div> -->
     <h4>Dejanos algunos datos y tu mail para que no te pierdas nuetros nuevos lanzamientos</h4>
     <div class="formulario">
-        <form action="/action_page.php">
+        <form action="" name="formulario" method="get">
           <div class="row">
             <div class="col-25">
-              <label for="nombre">Tu nombre</label>
+              <label for="nombre">Tu nombre completo</label>
             </div>
             <div class="col-75">
               <input type="text" id="nombre" name="nombre" placeholder="Nombre completo..">
@@ -113,9 +113,14 @@
                 <input type="text" id="mail" name="mail" placeholder="Dirección de correo electronico..">
             </div>
           </div>
+          <div id="textoValidacion1" class="textoValidacion"></div>
+          <div id="textoValidacion2" class="textoValidacion"></div>
+          <div id="textoValidacion3" class="textoValidacion"></div>
+          <div id="textoValidacion4" class="textoValidacion"></div>
           <div class="row">
-            <input type="submit" value="Submit">
+            <input type="submit" id="enviar" name="enviar" value="Enviar">
           </div>
+          
         </form>
       </div>
       
@@ -126,5 +131,6 @@
         <a class="social"><i class="fa fa-instagram"></i>Cute Paws amantes de mascotas </a>
         <a class="social"><i class="fa fa-youtube"></i>Cute Paws expertos en mascotas </a>
     </footer>
+    <script src="/CutePaws/JS/validacion.js"></script>
 </body>
 </html>
