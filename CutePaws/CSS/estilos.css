@@ -225,18 +225,18 @@ input[type=submit]:hover {
         font-size: 20px;
     }
     footer a{
-        font-size: 10px;
+        font-size: 100%;
         margin-left: 0;
         margin-right: 0;
+        justify-content: left;
     }
     footer{
-        display: -moz-inline-box;
         text-align: center;
         background-color: var(--naranja);
-        display: flex;
-        justify-content: space-between;
+        display: block;
+        justify-content: left;
         height: 150px;
-        padding: 5px 8%;
+        padding: 10px 10%;
     }
     nav ul li a{
         font-weight: 700;
